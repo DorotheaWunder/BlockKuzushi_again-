@@ -30,7 +30,27 @@ else()
     message(STATUS "Using local ${LIB1}")
 endif()
 
-add_executable(BlockKuzushi_again_ main.c)
+add_executable(BlockKuzushi_again_ main.c
+        BallCollision.c
+        BallLogic.c
+        BallMovement.c
+        BallValues.h
+        BlockLogic.c
+        BlockValues.h
+        DrawManager.c
+        DrawManager.h
+        GridLogic.c
+        GridValues.h
+        InitManager.c
+        InitManager.h
+        PaddleLogic.c
+        PaddleValues.h
+        ScreenLogic.c
+        ScreenValues.h
+        UpdateManager.c
+        UpdateManager.h
+        Upgrade.c
+        Upgrade.h)
 
 # set the include directory
 target_include_directories(BlockKuzushi_again_ PRIVATE ${raylib_INCLUDE_DIRS})
