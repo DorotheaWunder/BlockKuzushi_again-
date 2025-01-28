@@ -13,7 +13,8 @@ void InitializeGridValues()
     {
         for (int col = 0; col < COL; col++)
         {
-            int health = GetRandomValue(VERY_LOW, VERY_HIGH);
+            int health = GetRandomValue(DESTROYED, VERY_LOW);
+            //int health = GetRandomValue(VERY_LOW, VERY_HIGH);
             blockGrid[row][col] = InitializeBlockValues(100, 30, health, row, col);
         }
     }

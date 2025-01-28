@@ -35,14 +35,12 @@ void DrawBlockVisuals(Block *block)
 {
     if (block->block_Health != DESTROYED)
     {
-        // Draw block color
         DrawRectangle(
             block->x_Coord, block->y_Coord,
             block->block_Width, block->block_Height,
             block->block_Color
         );
 
-        // Draw outline
         DrawRectangleLinesEx(
             (Rectangle)
             {

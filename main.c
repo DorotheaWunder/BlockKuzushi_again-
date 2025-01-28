@@ -6,12 +6,15 @@
 #include "ballvalues.h"
 #include "blockvalues.h"
 #include "gridvalues.h"
+#include "upgrade.h"
 
 #include "initmanager.h"
 #include "updatemanager.h"
 #include "drawmanager.h"
 
-#include "upgrade.h"
+#include "gameflow.h"
+
+
 
 int main()
 {
@@ -21,9 +24,19 @@ int main()
 
     while (!WindowShouldClose())
     {
+        if (isGameLost) {
+            DisplayGameLost();
+            return 0;
+        }
+        if (isGameWon) {
+            DisplayGameWon();
+            return 0;
+        }
+
         UpdateGame(&game.player, &game.ball, &game.upgrade);
 
         BeginDrawing();
+
         ClearBackground(game.screen.color_Background);
 
         DrawGameVisuals(&game.player, &game.ball, &game.upgrade);

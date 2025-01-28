@@ -1,4 +1,5 @@
 ﻿#include "updatemanager.h"
+#include "gameflow.h"
 
 void UpdatePaddle(Paddle *player)
 {
@@ -70,10 +71,11 @@ void UpdateUpgrades(Upgrade *upgrade, Paddle *paddle, Ball *ball)
 void UpdateGame(Paddle *player, Ball *ball, Upgrade *upgrade)
 {
     UpdatePaddle(player);
-
     UpdateBall(ball, player);
-
     UpdateGridBlocks();
-
     UpdateUpgrades(upgrade, player, ball);
+
+    if (AllBlocksDestroyed()) {
+        isGameWon = 1;
+    }
 }

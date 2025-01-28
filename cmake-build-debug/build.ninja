@@ -145,6 +145,14 @@ build CMakeFiles/BlockKuzushi_again_.dir/Upgrade.c.obj: C_COMPILER__BlockKuzushi
   OBJECT_DIR = CMakeFiles\BlockKuzushi_again_.dir
   OBJECT_FILE_DIR = CMakeFiles\BlockKuzushi_again_.dir
 
+build CMakeFiles/BlockKuzushi_again_.dir/Gameflow.c.obj: C_COMPILER__BlockKuzushi_again__unscanned_Debug C$:/Users/Administratör/CLionProjects/NEWBlockKuzushi/BlockKuzushi_again-/Gameflow.c || cmake_object_order_depends_target_BlockKuzushi_again_
+  DEFINES = -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP
+  DEP_FILE = CMakeFiles\BlockKuzushi_again_.dir\Gameflow.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Administratör/CLionProjects/NEWBlockKuzushi/BlockKuzushi_again-/cmake-build-debug/_deps/raylib-src/src -IC:/Users/Administratör/CLionProjects/NEWBlockKuzushi/BlockKuzushi_again-/cmake-build-debug/_deps/raylib-src/src/external/glfw/include
+  OBJECT_DIR = CMakeFiles\BlockKuzushi_again_.dir
+  OBJECT_FILE_DIR = CMakeFiles\BlockKuzushi_again_.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target BlockKuzushi_again_
@@ -153,7 +161,7 @@ build CMakeFiles/BlockKuzushi_again_.dir/Upgrade.c.obj: C_COMPILER__BlockKuzushi
 #############################################
 # Link the executable BlockKuzushi_again_.exe
 
-build BlockKuzushi_again_.exe: C_EXECUTABLE_LINKER__BlockKuzushi_again__Debug CMakeFiles/BlockKuzushi_again_.dir/main.c.obj CMakeFiles/BlockKuzushi_again_.dir/BallCollision.c.obj CMakeFiles/BlockKuzushi_again_.dir/BallLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/BallMovement.c.obj CMakeFiles/BlockKuzushi_again_.dir/BlockLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/DrawManager.c.obj CMakeFiles/BlockKuzushi_again_.dir/GridLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/InitManager.c.obj CMakeFiles/BlockKuzushi_again_.dir/PaddleLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/ScreenLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/UpdateManager.c.obj CMakeFiles/BlockKuzushi_again_.dir/Upgrade.c.obj | _deps/raylib-build/raylib/libraylib.a || _deps/raylib-build/raylib/external/glfw/src/glfw _deps/raylib-build/raylib/libraylib.a
+build BlockKuzushi_again_.exe: C_EXECUTABLE_LINKER__BlockKuzushi_again__Debug CMakeFiles/BlockKuzushi_again_.dir/main.c.obj CMakeFiles/BlockKuzushi_again_.dir/BallCollision.c.obj CMakeFiles/BlockKuzushi_again_.dir/BallLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/BallMovement.c.obj CMakeFiles/BlockKuzushi_again_.dir/BlockLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/DrawManager.c.obj CMakeFiles/BlockKuzushi_again_.dir/GridLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/InitManager.c.obj CMakeFiles/BlockKuzushi_again_.dir/PaddleLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/ScreenLogic.c.obj CMakeFiles/BlockKuzushi_again_.dir/UpdateManager.c.obj CMakeFiles/BlockKuzushi_again_.dir/Upgrade.c.obj CMakeFiles/BlockKuzushi_again_.dir/Gameflow.c.obj | _deps/raylib-build/raylib/libraylib.a || _deps/raylib-build/raylib/external/glfw/src/glfw _deps/raylib-build/raylib/libraylib.a
   FLAGS = -g
   LINK_LIBRARIES = _deps/raylib-build/raylib/libraylib.a  -lopengl32  -lglu32  -lwinmm  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\BlockKuzushi_again_.dir

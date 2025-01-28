@@ -50,7 +50,9 @@ add_executable(BlockKuzushi_again_ main.c
         UpdateManager.c
         UpdateManager.h
         Upgrade.c
-        Upgrade.h)
+        Upgrade.h
+        Gameflow.h
+        Gameflow.c)
 
 # set the include directory
 target_include_directories(BlockKuzushi_again_ PRIVATE ${raylib_INCLUDE_DIRS})

@@ -2,6 +2,7 @@
 #include "raymath.h"
 
 #include "ballvalues.h"
+#include "gameflow.h"
 
 Ball balls[BALLS_MAX];
 int activeBalls = 10;
@@ -17,7 +18,7 @@ Ball InitializeBallValues()
             },
         .health =
         {
-            .player_Lives = 5,
+            .player_Lives = 50,
             .is_Active = 1,
             },
         .physics =
@@ -57,7 +58,7 @@ void BallDeathRespawn(Ball *ball)
         }
         else
         {
-            DrawText("Game Over!", GetScreenWidth() / 2 - 100, GetScreenHeight() / 2, 20, RED);
+            isGameLost = 1;
         }
     }
 }
