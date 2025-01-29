@@ -5,11 +5,11 @@
 
 Color health_colors[] = {
     BLANK,
-    GRAY,
-    ORANGE,
-    YELLOW,
-    GREEN,
-    PURPLE
+    (Color){ 2, 125, 67, 255 },
+    (Color){ 3, 175, 93, 255 },
+    (Color){ 4, 226, 120, 255 },
+    (Color){ 29, 251, 146, 255 },
+    (Color){ 80, 252, 170, 255 }
 };
 
 Block InitializeBlockValues(int width, int height, int health, int row, int col)

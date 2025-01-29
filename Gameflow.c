@@ -37,12 +37,14 @@ void DisplayGameLost()
 {
     ClearBackground(BLACK);
     DrawText("GAME OVER", 300, 250, 60, RED);
+    DrawText("Press 'Q' to quit or 'R' to replay", 300, 350, 20, WHITE);
 }
 
 void DisplayGameWon()
 {
     ClearBackground(BLACK);
     DrawText("YOU WIN", 300, 250, 60, GREEN);
+    DrawText("Press 'Q' to quit or 'R' to replay", 300, 350, 20, WHITE);
 }
 
 void GameLoop()
@@ -61,4 +63,11 @@ void GameLoop()
     DrawGameVisuals(&player, &ball, &upgrade);
 }
 
+void ResetGame(GameElements *game)
+{
+    *game = InitializeGame();
+
+    isGameLost = 0;
+    isGameWon = 0;
+}
 

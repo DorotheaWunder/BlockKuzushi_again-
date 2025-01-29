@@ -18,7 +18,7 @@ Ball InitializeBallValues()
             },
         .health =
         {
-            .player_Lives = 50,
+            .player_Lives = 10,
             .is_Active = 1,
             },
         .physics =

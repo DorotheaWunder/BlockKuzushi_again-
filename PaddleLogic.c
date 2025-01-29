@@ -8,7 +8,7 @@ Paddle InitializePaddleValues()
             .color = WHITE
         },
         .values = {
-            .movement_speed = 5.0f
+            .movement_speed = 7.0f
         },
         .controls = {
             .key_Left = {KEY_A, KEY_LEFT},

@@ -3,7 +3,7 @@
 
 #include "blockvalues.h"
 
-#define ROW 13
+#define ROW 10
 #define COL 10
 
 extern Block blockGrid[ROW][COL];

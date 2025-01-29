@@ -24,13 +24,26 @@ int main()
 
     while (!WindowShouldClose())
     {
-        if (isGameLost) {
-            DisplayGameLost();
-            return 0;
-        }
-        if (isGameWon) {
-            DisplayGameWon();
-            return 0;
+        if (isGameLost || isGameWon) {
+            BeginDrawing();
+
+            if (isGameLost) {
+                DisplayGameLost();
+            } else if (isGameWon) {
+                DisplayGameWon();
+            }
+
+            EndDrawing();
+
+            if (IsKeyPressed(KEY_Q)) {
+                break;  // Quit the game
+            }
+            if (IsKeyPressed(KEY_R)) {
+                ResetGame(&game);  // Reset and start a new game
+                continue;  // Restart the loop for the new game
+            }
+
+            continue;  // Prevent rendering the game visuals
         }
 
         UpdateGame(&game.player, &game.ball, &game.upgrade);

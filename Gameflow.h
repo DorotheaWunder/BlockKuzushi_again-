@@ -5,6 +5,7 @@
 #include "ballvalues.h"
 #include "gridvalues.h"
 #include "upgrade.h"
+#include "initmanager.h"
 
 extern Paddle player;
 extern Ball ball;
@@ -20,6 +21,7 @@ void DisplayGameLost();
 void DisplayGameWon();
 
 void GameLoop();
+void ResetGame(GameElements *game);
 
 
 #endif //GAMEFLOW_H
